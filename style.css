@@ -45,7 +45,7 @@ body{
 	align-items:center;
 }
 .title__content{
-	width: 60%;
+	width: 75%;
 	height: auto;
 }
 .title__text {
@@ -59,6 +59,8 @@ body{
 .second {
 	font-size: 90px;
 	text-transform: uppercase;
+	max-width: 600px;
+	font-weight: 500;
 }
 .third{
 	font-weight: inherit;
@@ -75,10 +77,13 @@ body{
 	font-size: 30px;
 	font-weight: inherit;
 	text-transform: uppercase;
-	display: inline-block;
-
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-.contnet__title::after{
+.underline{
+	display: inline-block;
+	text-shadow: none;
+}
+.underline::after{
 	content: '';
 	position: absolute;
 	height: 2px;
@@ -91,8 +96,22 @@ body{
 	margin: 5px 5px;
 	width: 300px;
 	height: 300px;
-	box-shadow: 0px 0px 30px rgba(100, 100, 100, 0.1);
+	box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.3);
 	display: inline-block;
+}
+.content__header {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	align-items:center;
+	justify-content:center;
+	background-color: #ECB0E1;
+	color: white;
+}
+.content__bottom {
+	padding: 0px 20px;
+	width: calc(100% - 40px);
+	height: 50%;
 }
 .gallery-block {
 	background-color: #FFDDA1;
@@ -105,45 +124,28 @@ img {
 }
 
 .gallery {
+    background-color: #FFDDA1;
+    padding: 20px 0px;
+    text-align: center;
     display: flex;
-    margin: 10px auto;
-    max-width: 600px;
-    position: relative;
-    padding-top: 400px;
+    justify-content:center;
 }
-.gallery__img {
-	width: 600px;
+.gallery__content {
+	width: 900px;
 	height: 400px;
-	position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    background-color: #85C7F2;
 }
-  
-.gallery__thumb {
-    padding-top: 6px;
-    margin: 6px;
-    display: block;
-    width: 138px;
-	height: 92px;
+.gallery__row{
+	height: 200px;
+	width: 100%;
+	display: flex;
+}
+.gallery__image {
+	margin: 0px;
+	width: 300px;
+	height: 200px;
 	background-color: #ECB0E1;
+	display: inline-block;
 }
-.gallery__selector {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.gallery__selector:checked + .gallery__img{
-	opacity: 1;
-}
-.gallery__selector:checked ~ .gallery__thumb > img{
-	box-shadow: 0 0 0 3px #0be2f6;
-}
-.gallery__images {}
-.gallery__image {}
 .video-block {
 	text-align: center;
 	margin: 100px 0px;
