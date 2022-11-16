@@ -6,8 +6,10 @@
 	<link rel="stylesheet" href="style.css">
 	<title></title>
 	<script src="https://kit.fontawesome.com/aecd654eb6.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+
 	<div class="header">
 		<div class="header__content">
 			<div alt="" class="header__logo"></div>
@@ -42,45 +44,47 @@
 		<div class="content__title-container">
 			<h2 class="contnet__title underline">Title</h2>
 		</div>
-		<div class="content__block">
-			<div class="content__header">
-				<h2 class="contnet__title">Title</h2>
+		<div class="content__blocks">
+			<div class="content__block">
+				<div class="content__header">
+					<h2 class="contnet__title">Title</h2>
+				</div>
+				<div class="content__bottom">
+					<p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet malesuada auctor. Vestibulum tempus, massa at eleifend elementum, tortor lacus consequat dolor, viverra feugiat eros lacus a nibh.</p>
+				</div>
 			</div>
-			<div class="content__bottom">
-				<p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet malesuada auctor. Vestibulum tempus, massa at eleifend elementum, tortor lacus consequat dolor, viverra feugiat eros lacus a nibh.</p>
+			<div class="content__block">
+				<div class="content__header">
+					<h2 class="contnet__title">Title</h2>
+				</div>
+				<div class="content__bottom">
+					<p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet malesuada auctor. Vestibulum tempus, massa at eleifend elementum, tortor lacus consequat dolor, viverra feugiat eros lacus a nibh.</p>
+				</div>
 			</div>
-		</div>
-		<div class="content__block">
-			<div class="content__header">
-				<h2 class="contnet__title">Title</h2>
-			</div>
-			<div class="content__bottom">
-				<p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet malesuada auctor. Vestibulum tempus, massa at eleifend elementum, tortor lacus consequat dolor, viverra feugiat eros lacus a nibh.</p>
-			</div>
-		</div>
-		<div class="content__block">
-			<div class="content__header">
-				<h2 class="contnet__title">Title</h2>
-			</div>
-			<div class="content__bottom">
-				<p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet malesuada auctor. Vestibulum tempus, massa at eleifend elementum, tortor lacus consequat dolor, viverra feugiat eros lacus a nibh.</p>
+			<div class="content__block">
+				<div class="content__header">
+					<h2 class="contnet__title">Title</h2>
+				</div>
+				<div class="content__bottom">
+					<p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet malesuada auctor. Vestibulum tempus, massa at eleifend elementum, tortor lacus consequat dolor, viverra feugiat eros lacus a nibh.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div id="2" class="gallery">
 		<div class="gallery__top">
 			<div class="gallery__backstages">
-				<button class="gallery__button">
+				<button id="prev" class="gallery__button">
 					<i class="fa-solid fa-angle-left"></i>
 				</button>
-				<button class="gallery__button" style="left: 90.1%;">
+				<button id="next" class="gallery__button" style="left: 90.1%;">
 					<i class="fa-solid fa-angle-right"></i>
 				</button>
-				<div class="gallery__slider-line">
+				<div class="gallery__slider-line" id="slider" style="left: 0px;">
 					<div class="gallery__slider-image"></div>
-					<div class="gallery__slider-image"></div>
-					<div class="gallery__slider-image"></div>
-					<div class="gallery__slider-image"></div>
+					<div class="gallery__slider-image pink"></div>
+					<div class="gallery__slider-image "></div>
+					<div class="gallery__slider-image pink"></div>
 					<div class="gallery__slider-image"></div>
 				</div>
 
@@ -154,5 +158,6 @@
 			
 		</div>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>

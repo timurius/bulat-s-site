@@ -70,11 +70,11 @@ body{
 	opacity: 0.7;
 }
 .content {
-	margin: 10% 0px;
+	margin: 7% 0px;
 	text-align: center;
+	font-family: sans-serif;
 }
 .contnet__title {
-	font-family: sans-serif;
 	position: relative;
 	font-size: 30px;
 	font-weight: inherit;
@@ -94,10 +94,13 @@ body{
 	left: calc(50% - 15%);
 	bottom: 0;
 }
+.content__blocks {
+	margin-top: 40px;
+}
 .content__block {
-	margin: 5px 5px;
-	width: 300px;
-	height: 300px;
+	margin: 5px 10px;
+	width: 400px;
+	height: 400px;
 	box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.3);
 	display: inline-block;
 }
@@ -114,31 +117,36 @@ body{
 	padding: 0px 20px;
 	width: calc(100% - 40px);
 	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .gallery-block {
 	background-color: #FFDDA1;
 	padding: 40px 0px;
 }
 
-img {
-  max-width: 100%;
-  vertical-align: top;
-}
+
 .gallery {
 	width: 100%;
-	height: 800px;
-	background-color: #FFDDA1;
+	height: 1000px;
+	background-color: #F5F8FB;
+	font-family: sans-serif;
 }
 .gallery__top {
-	height: 50%;
+	height: 40%;
 	display: flex;
 }
 .gallery__backstages {
-	width: 50%;
+	margin: 0px 5%;
+	width: 40%;
 	height: 100%;
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
+}
+.gallery__backstages:hover .gallery__button{
+	opacity: 1;
 }
 .gallery__button {
 	height: 100%;
@@ -147,31 +155,49 @@ img {
 	position: absolute;
 	border: none;
 	background-color: rgba(255, 255, 255, 0.6);
+	opacity: 0;
+	font-size: 20px;
 }
 .gallery__slider-line {
 	height: 100%;
-	width: 3800px;
+	width: 500%;
 	display: flex;
+	position: relative;
+	transition: all ease 1s;
 }
 .gallery__slider-image {
 	background-color: #85C7F2;
-	width: 760px;
-	height: 765px;
+	width: 100%;
+	height: 100%;
 	display: inline-block;
 }
+.pink {
+	background-color: #ECB0E1 ;
+}
 .gallery__info {
-	width: 50%;
+	margin: 0px 5%;
+	width: 40%;
 	height: 100%;
 	display: inline-block;
 	padding: 40px;
 	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.3;
 }
 .gallery__title {
-
+	margin: 0px;
+	margin-top: 10px;
+	font-size: 36px;
+	font-weight: 600;
+	ext-transform: uppercase;
+	letter-spacing: 4px;
 }
-.gallery__text {}
+.gallery__text {
+	max-width: 480px;
+	color: #888;
+}
 .gallery__images {
-	height: 50%;
+	height: 60%;
 	width: 100%;
 }
 .gallery__row {
