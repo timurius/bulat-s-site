@@ -4,10 +4,11 @@ html{
 body{
 	padding: 0px;
 	margin: 0px;
+	font-family: sans-serif;
+	padding-top: 10px;
 }
 .header {
 	width: 100%;
-	font-family: sans-serif;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -17,11 +18,15 @@ body{
 }
 .header__logo {
 	vertical-align: middle;
-	background-color: #ECB0E1 ;
 	width: 100px;
 	height: 100px;
 	display: inline-block;
 	margin-right: 10%;
+}
+.header__logo img{
+	border-radius: 90%;
+	width: 100%;
+	height: 100%
 }
 .header__buttons {
 	padding: 0px;
@@ -38,13 +43,13 @@ body{
 	text-decoration-line: none;
 }
 .title {
-	font-family: sans-serif;
 	margin: 15px 0px;
 	background-color: #85C7F2 ;
 	height: 75vh;
 	display: flex;
 	justify-content:center;
 	align-items:center;
+	background: url('./Заглушки/header.jpg') center / cover no-repeat;
 }
 .title__content{
 	width: 75%;
@@ -72,7 +77,6 @@ body{
 .content {
 	margin: 7% 0px;
 	text-align: center;
-	font-family: sans-serif;
 }
 .contnet__title {
 	position: relative;
@@ -105,6 +109,7 @@ body{
 	display: inline-block;
 }
 .content__header {
+	background: url('./Заглушки/content__block.jpg') center / cover no-repeat;
 	display: flex;
 	height: 50%;
 	width: 100%;
@@ -127,28 +132,26 @@ body{
 }
 
 
-.gallery {
-	width: 100%;
-	height: 1000px;
+
+.backstages {
 	background-color: #F5F8FB;
-	font-family: sans-serif;
-}
-.gallery__top {
-	height: 40%;
+	height: 500px;
 	display: flex;
+	position: relative;
+	align-items: center;
 }
-.gallery__backstages {
-	margin: 0px 5%;
-	width: 40%;
-	height: 100%;
+.backstages__content {
+	margin-left: 17%;
+	width: 35%;
+	height: 80%;
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
 }
-.gallery__backstages:hover .gallery__button{
+.backstages__content:hover .backstages__button{
 	opacity: 1;
 }
-.gallery__button {
+.backstages__button {
 	height: 100%;
 	width: 10%;
 	z-index: 3;
@@ -158,24 +161,31 @@ body{
 	opacity: 0;
 	font-size: 20px;
 }
-.gallery__slider-line {
+.backstages__slider-line {
 	height: 100%;
 	width: 500%;
 	display: flex;
 	position: relative;
 	transition: all ease 1s;
 }
-.gallery__slider-image {
+.backstages__image {
 	background-color: #85C7F2;
 	width: 100%;
 	height: 100%;
 	display: inline-block;
+	overflow: hidden;
+	position: relative;
 }
-.pink {
-	background-color: #ECB0E1 ;
+.backstages__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-.gallery__info {
-	margin: 0px 5%;
+.backstages__info {
+	margin-left: 5%;
 	width: 40%;
 	height: 100%;
 	display: inline-block;
@@ -184,7 +194,7 @@ body{
 	font-size: 16px;
 	line-height: 1.3;
 }
-.gallery__title {
+.backstages__title {
 	margin: 0px;
 	margin-top: 10px;
 	font-size: 36px;
@@ -192,44 +202,70 @@ body{
 	ext-transform: uppercase;
 	letter-spacing: 4px;
 }
-.gallery__text {
-	max-width: 480px;
+.text {
 	color: #888;
 }
-.gallery__images {
+.gallery {
 	height: 60%;
 	width: 100%;
+	position: relative;
 }
 .gallery__row {
-	height: 50%;
 	display: flex;
 }
 .gallery__image {
-	display: inline-block;
 	width: 20%;
+	padding: 0px 0px 19.8% 0px;
+	overflow: hidden;
+	position: relative;
+}
+.gallery__image img{
+	width: 100%;
 	height: 100%;
-	background-color: #ECB0E1;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .gallery__image:hover {
 	filter: brightness(85%);
 }
-.video-block {
-	text-align: center;
-	margin: 100px 0px;
-
+.about {
+	margin: 200px 0px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.video__content{
-	width: 400px;
-	margin: 0px 2px;
+.about__content {
+	width: 65%;
+	height: 100%;
+	display: flex;
+}
+.about__text-block {
+	width: 50%;
 	display: inline-block;
 }
-.video {
+.about__image {
+	width: 50%;
+	display: inline-block;
+	text-align: right;
+}
+.about__image img{
+	border-radius: 100%;
 	width: 400px;
-	height: 200px;
+	height: 400px;
 }
-.video__title{
-	text-align: center;
+.about__title {
+	font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.2;
 }
+
 .blank {
 	padding: 20px 0px;
 	margin: 20px 0px;
@@ -241,7 +277,6 @@ body{
 }
 .blank__title {
 	color: white;
-	font-family: sans-serif;
 	font-weight: bold;
 }
 .input-field {

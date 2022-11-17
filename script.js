@@ -1,5 +1,6 @@
 let left = 0;
 function sliderMovement(direction) {
+	clearInterval(autoMoving)
 	left += 100 * direction;
 	if ( left == -500 ) {
 		left = 0;
@@ -8,8 +9,9 @@ function sliderMovement(direction) {
 		left = -400;
 	}
 	document.getElementById("slider").style.left = left + "%";
+	autoMoving = setInterval(sliderMovement, 4000, -1);
 }
-let autoMoving = setInterval(sliderMovement, 4000, -1)
+let autoMoving = setInterval(sliderMovement, 4000, -1);
 document.getElementById("next").addEventListener("click", function(){
 	sliderMovement(-1)
 })
