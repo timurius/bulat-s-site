@@ -14,7 +14,7 @@ function sliderMovement(direction) {
 let autoMoving = setInterval(sliderMovement, 4000, -1);
 document.getElementById("next").addEventListener("click", function(){
 	sliderMovement(-1)
-})
+}, {passive: true})
 document.getElementById("prev").addEventListener("click", function(){
 	sliderMovement(1)
-})
+}, {passive: true})
