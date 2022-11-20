@@ -5,13 +5,23 @@ body{
 	padding: 0px;
 	margin: 0px;
 	font-family: sans-serif;
-	padding-top: 10px;
+	
+}
+.header__sandwitch{
+	width: 50%;
+	justify-content: right;
+	padding-right: 20px;
+	font-size: 20px;
+	display: none;
 }
 .header {
+	padding: 10px 0px;
 	width: 100%;
 	display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    z-index: 3;
 }
 .header__content {
 	width: 75%;
@@ -371,4 +381,92 @@ body{
 	margin-top: 10px;
 	height: 407px;
 	width: 700px;
+}
+@media (max-width: 800px){
+	.header__buttons{
+		display: none;
+	}
+	.header{
+		justify-content: left;
+		width: 100%;
+		position: -webkit-sticky; /* Safari */
+  		position: sticky;
+  		top: 0;
+	}
+	.header__sandwitch{
+		display: flex;
+	}
+	.header__content{
+		width: 50%;
+	}
+	.first{
+		font-size: 30px;
+	}
+	.second{
+		font-size: 60px;
+	}
+	.third{
+		font-size: 24px;
+	}
+	.title{
+		justify-content: left;
+		padding-left: 5%;
+	}
+	.content__block{
+		display: block;
+		width: 90%;
+		margin: 10px auto;
+	}
+	.content__block p{
+		font-size: 16px;
+	}
+	.text-block__text-conainer{
+		padding: 0px 15px;
+	}
+	.backstages{
+		display: block;
+		padding: 15% 0px;
+		padding-top: 7.5%;
+	}
+	.backstages__slider{
+		width: 370px;
+		height: 245px;
+		margin: 0px auto;
+	}
+	.backstages__content{
+		width: 100%;
+		display: flex;
+		height: auto;
+		justify-content: center;
+	}
+	.backstages__info{
+		display: block;
+		width: 100%;
+		padding: 0px;
+		margin: 20px 0px;
+		text-align: center;
+	}
+	.backstages__title{
+		font-size: 18px;
+	}
+	.text{
+		font-size: 14px;
+	}
+	.about__content{
+		width: 100%;
+		display: block;
+	}
+	.about__image{
+		width: 100%;
+		display: block;
+	}
+	.about__text-block{
+		width: 100%;
+		display: block;
+	}
+	.about__image img{
+		width: 400px;
+		height: 400px;
+		margin: 0px auto;
+	}
 }
