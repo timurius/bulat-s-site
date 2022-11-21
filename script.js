@@ -1,4 +1,5 @@
 let left = 0;
+
 function sliderMovement(direction) {
 	clearInterval(autoMoving)
 	left += 100 * direction;
@@ -18,3 +19,14 @@ document.getElementById("next").addEventListener("click", function(){
 document.getElementById("prev").addEventListener("click", function(){
 	sliderMovement(1)
 }, {passive: true})
+
+function burgerMenuDisplay(){
+	console.log("bruh")
+	const menu = document.getElementById("menu");
+	if ( menu.className.length < 16 ) {
+		menu.className += " active";
+	}else{
+		menu.className = menu.className.substr(0, 15);
+	}
+	
+}

@@ -2,11 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<title></title>
 	<script src="https://kit.fontawesome.com/aecd654eb6.js" crossorigin="anonymous"></script>
-
+	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
 
@@ -15,7 +14,7 @@
 			<div alt="" class="header__logo">
 				<img src="./Заглушки/header__logo.webp" alt="">
 			</div>
-			<ul class="header__buttons">
+			<ul class="header__buttons" id="menu">
 				<li>
 					<a href="#1">Button</a>
 				</li>
@@ -34,9 +33,10 @@
 			</ul>
 		</div>
 		<div class="header__sandwitch">
-			<i class="fa-solid fa-bars"></i>
+			<a href="javascript:burgerMenuDisplay()">
+				<i class="fa-solid fa-bars"></i>
+			</a>
 		</div>
-			
 	</div>
 	<div class="title">
 		<div class="title__content">
@@ -80,7 +80,7 @@
 	<div class="text-block">
 		<h2>title</h2>
 		<div class="text-block__text-conainer">
-			<p>
+			<p class="text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac ipsum lorem. Duis sollicitudin orci id vehicula facilisis. Morbi condimentum lectus sit amet gravida aliquet. Vestibulum vel dolor dapibus, consequat odio sed, viverra dolor. Pellentesque dictum pulvinar eros non lobortis. Maecenas efficitur bibendum odio in porttitor. Pellentesque congue orci molestie volutpat tempor. Donec eget tristique elit. Aliquam auctor at lorem ac dictum. Praesent eu varius urna. Fusce orci nulla, placerat id sagittis eget, tincidunt eget odio. Vivamus vel dapibus eros. Donec porttitor in felis ac aliquam. 
 			</p>
 		</div>
@@ -197,7 +197,7 @@
 			<a href="" class="contacts__contact">@artboolat</a>
 			<a href="" class="contacts__contact">@artboolat</a>
 			<a href="" class="contacts__contact">@artboolat</a>	
-			<iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.7884515649812!2d44.760441297064915!3d41.72873257731464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472e1754fb803%3A0xa48cd5d4d4fdcae6!2s166-1%20Otar%20Chiladze%20St%2C%20T&#39;bilisi!5e0!3m2!1sru!2sge!4v1667919041478!5m2!1sru!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
 		</div>
 
 	</div>
