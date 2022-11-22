@@ -21,7 +21,6 @@ document.getElementById("prev").addEventListener("click", function(){
 }, {passive: true})
 
 function burgerMenuDisplay(){
-	console.log("bruh")
 	const menu = document.getElementById("menu");
 	if ( menu.className.length < 16 ) {
 		menu.className += " active";

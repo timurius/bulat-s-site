@@ -29,13 +29,15 @@ body{
 .header__content {
 	width: 50%;
 }
-.header__sandwitch a:visited{
+.header__sandwitch a{
 	color: black;
 }
 .header__sandwitch a:active{
 	color: black;
 }
-
+.header__sandwitchh a:visited{
+	color: black;
+}
 .header__logo {
 	vertical-align: middle;
 	width: 100px;
@@ -413,25 +415,34 @@ body{
 	height: 407px;
 	width: 700px;
 }
-@media (min-width: 800px){
+@media (min-width: 1100px){
 	.header__buttons{
 		padding: 0px;
 		vertical-align: middle;
 		display: inline-block;/*v*/
+		position: relative;
+		width: 50%;
+		background: none;
 	}
 	.header__buttons li{
 		display: inline-block;
 		font-size: 18px;
 		margin: 0px 5px;
+		width: auto;
+		font-size: 20px;
+		margin: 0px 5px;
 	}
 	.header{
 		justify-content: center;/*v*/
+		justify-content: cebter;
+		position: relative;
+
 	}
 	.header__sandwitch{
 		display: none;/*v*/
 	}
 	.header__content{/*v*/
-		width: 75%;
+		width: 70%;
 	}
 	.first{/*v*/
 		font-size: 40px;
