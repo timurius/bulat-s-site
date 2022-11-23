@@ -29,15 +29,10 @@ body{
 .header__content {
 	width: 50%;
 }
-.header__sandwitch a{
+.header__burger a{
 	color: black;
 }
-.header__sandwitch a:active{
-	color: black;
-}
-.header__sandwitchh a:visited{
-	color: black;
-}
+
 .header__logo {
 	vertical-align: middle;
 	width: 100px;
@@ -340,7 +335,7 @@ body{
 .contact-form {
 	width: 100%;
 	padding: 40px 0px;
-	background-color: #F5F8FB;
+	background-color: #e2ebf4;
 	display: block;
 	justify-content: center;
 }
@@ -374,13 +369,22 @@ body{
 	box-sizing: border-box;
 	text-align: left;
 	border-style: solid;
-	border-radius: 10px;
-	border-width: 1px;
-	border-color: rgba(0, 0, 0, 0.1);
-	padding: 15px 5px;
+	border-radius: 0px;
+	border: none;
+	padding: 15px 10px;
 	display: inline;
 	resize: none;
 	width: 100%;
+}
+.half {
+	width: 47%;
+	display: inline-block;
+}
+.left {
+	margin-right: 2.2%;
+}
+.right {
+	margin-left: 2.5%;
 }
 .send-btn {
 	font-size: 17px;
@@ -388,11 +392,11 @@ body{
 	padding: 15px 40px;
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 50px;
+	border-radius: 0px;
 	border-color: rgba(0, 0, 0, 0.1);
 }
 .send-btn:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+	color: #0671c6;
 }
 .contacts {
 	text-align: center;
@@ -405,10 +409,14 @@ body{
 	text-decoration: none;
 	color: black;
 	margin: 0px 1%;
+	color: #888;
 }
 .contacts a:visited {
-	color: black;
+	color: #888;
 
+}
+.contacts a:hover{
+	text-decoration-line: underline;
 }
 .contacts__map {
 	margin-top: 10px;
@@ -438,7 +446,7 @@ body{
 		position: relative;
 
 	}
-	.header__sandwitch{
+	.header__burger{
 		display: none;/*v*/
 	}
 	.header__content{/*v*/
@@ -511,13 +519,38 @@ body{
 		margin: 0px;
 	}
 	.blank{
-		width: 40%;
+		width: 33%;
 	}
 	.contact-form{
 		display: flex;
 	}
 	.contacts{
-		width: 900px;
-		display: inline-block;
+		width: 33%;
+		display: flex;
+		justify-content: center;
+		margin: 0px;
+	}
+	.contacts__container {}
+	.contacts a{
+		text-align: left;
+		display: block;
+		width: 100%;
+		margin: 10px 0px;
+		font-size: 25px;
+		
+	}
+	.contacts h2{
+		text-align: left;
+		font-size: 36px;
+		margin: 0px;
+		margin-bottom: 40px;
+		font-weight: 600;
+		letter-spacing: 4px;
+	}
+	.contacts img{
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		opacity: 50%;
 	}
 }

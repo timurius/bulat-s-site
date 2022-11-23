@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<title></title>
-	<script src="https://kit.fontawesome.com/aecd654eb6.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 <body>
@@ -32,9 +31,9 @@
 				</li>
 			</ul>
 		</div>
-		<div class="header__sandwitch">
+		<div class="header__burger">
 			<a href="javascript:burgerMenuDisplay()">
-				<i class="fa-solid fa-bars"></i>
+				<img src="./icons/burger.png" alt="" style="width: 40px; height: 40px;">
 			</a>
 		</div>
 	</div>
@@ -176,28 +175,30 @@
 				<p class="blank__title">Message</p>
 				<div class="input-fields">
 					<div class="input-field">
-						<input type="text" placeholder="Your name" name="name" class="input-field__input">
-					</div>
-					<div class="input-field">
 						<input type="text" placeholder="Your email adress" name="email" class="input-field__input">
 					</div>
-					<div class="input-field">
+					<div class="input-field half left">
+						<input type="text" placeholder="Your name" name="name" class="input-field__input">
+					</div>
+					<div class="input-field half right">
 						<input type="text" placeholder="Your phone number" name="Phone" class="input-field__input">
 					</div>
 					<div class="input-field">
-						<textarea name="Message" id="" placeholder="Type a message for me here" rows="10" class="input-field__input"></textarea>
+						<textarea name="Message" id="" placeholder="Type a message for me here" rows="5" class="input-field__input"></textarea>
 					</div>
 					<input type="submit" value="Submit" class="send-btn">
 				</div>
 			</form>
 		</div>
 		<div id="5" class="contacts">
-			<a href="tel:+995591218076" class="contacts__contact">+995 591 218 076</a>
-			<a href="" class="contacts__contact">@artboolat</a>
-			<a href="" class="contacts__contact">@artboolat</a>
-			<a href="" class="contacts__contact">@artboolat</a>
-			<a href="" class="contacts__contact">@artboolat</a>	
-			
+			<div class="contacts__container">
+				<h2> Contacts </h2>
+				<a href="tel:+995591218076" class="contacts__contact"> <img src="./icons/phone.png" alt=""> +995 591 218 076</a>
+				<a href="https://t.me/artboolat" class="contacts__contact"> <img src="./icons/telegram.png" alt=""> Telegram</a>
+				<a href="https://www.facebook.com/artboolat" class="contacts__contact"> <img src="./icons/facebook.png" alt=""> Facebook</a>
+				<a href="https://www.instagram.com/bulat.yagudin/" class="contacts__contact"> <img src="./icons/instagram.png" alt=""> Instagram</a>
+				<a href="mailto:artboolat@gmail.com" class="contacts__contact"> <img src="./icons/gmail.png" alt=""> Gmail</a>
+			</div>
 		</div>
 
 	</div>
