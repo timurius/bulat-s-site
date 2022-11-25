@@ -7,7 +7,7 @@ body{
 	font-family: sans-serif;
 	
 }
-.header__sandwitch{
+.header__burger{
 	width: 50%;
 	justify-content: right;
 	padding-right: 20px;
@@ -210,8 +210,8 @@ body{
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
-	width: 370px;
-	height: 245px;
+	width: 345px;
+	height: 225px;
 	margin: 0px auto;
 }
 .backstages__slider:hover .backstages__button{
@@ -376,15 +376,18 @@ body{
 	resize: none;
 	width: 100%;
 }
+.half-inputs-container{
+	display: flex;
+}
 .half {
 	width: 47%;
 	display: inline-block;
 }
 .left {
-	margin-right: 2.2%;
+	margin-right: 3%;
 }
 .right {
-	margin-left: 2.5%;
+	margin-left: 3%;
 }
 .send-btn {
 	font-size: 17px;
@@ -404,6 +407,12 @@ body{
 	width: 100%;
 	display: block;
 }
+.contacts img{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	opacity: 50%;
+}
 .contacts a {
 	display: inline-block;
 	text-decoration: none;
@@ -418,11 +427,34 @@ body{
 .contacts a:hover{
 	text-decoration-line: underline;
 }
-.contacts__map {
-	margin-top: 10px;
-	height: 407px;
-	width: 700px;
+.third-block {
+	display: none;
 }
+@media (min-width: 700px){
+	.backstages__slider{
+		width: 575px;
+		height: 375px;
+	}
+	.text{
+		font-size: 18px;
+	}
+	.backstages{
+		padding-bottom: 15vh;
+	}
+}
+@media (min-width: 800px){
+	.backstages__slider{
+		width: 700px;
+		height: 450px;
+	}
+	.text{
+		font-size: 18px;
+	}
+	.backstages{
+		padding-bottom: 300px;
+	}
+}
+
 @media (min-width: 1100px){
 	.header__buttons{
 		padding: 0px;
@@ -481,8 +513,7 @@ body{
 		padding: 40px 0px;
 	}
 	.backstages__slider{/*v*/
-		width: 700px;
-		height: 450px;
+		
 		margin: 0px;
 	}
 	.backstages__content{/*v*/
@@ -544,13 +575,11 @@ body{
 		font-size: 36px;
 		margin: 0px;
 		margin-bottom: 40px;
-		font-weight: 600;
+		font-weight: 400;
 		letter-spacing: 4px;
 	}
-	.contacts img{
-		width: 20px;
-		height: 20px;
-		vertical-align: middle;
-		opacity: 50%;
+	.third-block{
+		display: inline-block;
+		width: 33%;
 	}
 }
