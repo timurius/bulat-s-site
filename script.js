@@ -1,6 +1,11 @@
 let left = 0;
+process = false;
 
 function sliderMovement(direction) {
+	if ( process == true) {
+		return;
+	}
+	process = true;
 	clearInterval(autoMoving)
 	left += 100 * direction;
 	if ( left == -500 ) {
@@ -11,6 +16,7 @@ function sliderMovement(direction) {
 	}
 	document.getElementById("slider").style.left = left + "%";
 	autoMoving = setInterval(sliderMovement, 4000, -1);
+	setTimeout( () => process = false, 700 );
 }
 let autoMoving = setInterval(sliderMovement, 4000, -1);
 document.getElementById("next").addEventListener("click", function(){
@@ -28,4 +34,11 @@ function burgerMenuDisplay(){
 		menu.className = menu.className.substr(0, 15);
 	}
 	
+}
+function hidenGalleryClose( number ){
+	document.getElementById( "hiden-gallery" + number ).style.display = "none";
+}
+function hidenGalleryOpen( number ){
+	document.getElementById( "hiden-gallery" + number ).style.display = "block";
+	console.log(number)
 }

@@ -220,12 +220,15 @@ body{
 .backstages__button {
 	height: 100%;
 	width: 10%;
-	z-index: 3;
+	z-index: 2;
 	position: absolute;
 	border: none;
 	background-color: rgba(255, 255, 255, 0.6);
 	opacity: 0;
-	font-size: 20px;
+}
+.backstages__button img{
+	margin: auto;
+	display: inline-block;
 }
 .backstages__slider-line {
 	height: 100%;
@@ -272,7 +275,6 @@ body{
 .gallery {
 	height: 60%;
 	width: 100%;
-	position: relative;
 }
 .gallery__row {
 	display: flex;
@@ -290,6 +292,64 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.gallery-hiden__container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.close-icon {
+	display: flex;
+	justify-content: right;
+	margin-top: 250px;
+}
+.close-icon img {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+.gallery-hiden {
+	display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: 400px;
+    left: 0px;
+    top: 20px;
+}
+.gallery-hiden__item {
+
+}
+.gallery-hiden__selector {
+	position: absolute;
+    opacity: 0.1;
+    visibility: hidden;
+}
+.gallery-hiden__selector:checked + .gallery-hiden__img{
+	opacity: 1;
+}
+.gallery-hiden__selector:checked ~ .gallery-hiden__thumb{
+	box-shadow: 0 0 0 3px #0be2f6;
+}
+.gallery-hiden__img {
+	width: 600px;
+	height: 400px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #85C7F2;
+}
+.gallery-hiden__thumb {
+	padding-top: 6px;
+    margin: 6px;
+    display: block;
+    width: 138px;
+	height: 92px;
+	background-color: #ECB0E1;
 }
 .gallery__image:hover {
 	filter: brightness(85%);
