@@ -143,6 +143,7 @@ body{
 }
 .text{
 	font-size: 14px;
+	color: #888;
 }
 .content__header {
 	background: url('./Заглушки/content__block.webp') center / cover no-repeat;
@@ -194,7 +195,8 @@ body{
 	align-items: center;
 	justify-content: center;
 	display: block;
-	padding: 40px 0px;
+	padding: 40px 20px;
+	padding-bottom: 10px;
 	height: auto;
 }
 
@@ -530,8 +532,8 @@ body{
 		font-size: 18px;
 	}
 	.backstages{
-
 	}
+
 }
 
 @media (min-width: 1100px){
@@ -540,8 +542,9 @@ body{
 		vertical-align: middle;
 		display: inline-block;/*v*/
 		position: relative;
-		width: 50%;
+		width: 75%;
 		background: none;
+		text-align: left;
 	}
 	.header__buttons li{
 		display: inline-block;
@@ -583,7 +586,6 @@ body{
 	}
 	.text{/*v*/
 		font-size: 16px;
-		color: #888;
 	}
 	.text-block__text-conainer{/*v*/
 		padding: 0px 40px;
@@ -591,6 +593,8 @@ body{
 	.backstages{/*v*/
 		display: flex;
 		height: 500px;
+		padding: 40px 15px;
+		padding-bottom: 10px;
 	}
 	.backstages__slider{/*v*/
 		
@@ -659,7 +663,7 @@ body{
 		text-align: left;
 		font-size: 36px;
 		margin: 0px;
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 		font-weight: 400;
 		letter-spacing: 4px;
 	}
