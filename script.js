@@ -42,3 +42,11 @@ function hidenGalleryOpen( number ){
 	document.getElementById( "hiden-gallery" + number ).style.display = "block";
 	console.log(number)
 }
+function languageChanger( lang ){
+	if( lang == 'en' ){
+		window.open("https://timurius.github.io/bulat-s-site/en", "_self")
+	}
+	else if ( lang == 'ru' ) {
+		window.open("https://timurius.github.io/bulat-s-site/", "_self")
+	}
+}

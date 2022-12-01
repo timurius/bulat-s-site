@@ -22,6 +22,7 @@ body{
     z-index: 3;
     justify-content: left;
 	width: 100%;
+	height: 120px;
 	position: -webkit-sticky; /* Safari */
   	position: sticky;
   	top: 0;
@@ -297,6 +298,9 @@ body{
 	top: 0;
 	left: 0;
 }
+.gallery__image:hover {
+	filter: brightness(85%);
+}
 .gallery-hiden__container {
 	position: fixed;
 	width: 100%;
@@ -356,9 +360,6 @@ body{
     width: 83px;
 	height: 55px;
 	background-color: #ECB0E1;
-}
-.gallery__image:hover {
-	filter: brightness(85%);
 }
 .about {
 	margin: 200px 0px;
@@ -555,17 +556,48 @@ body{
 		margin: 0px 5px;
 	}
 	.header{
-		justify-content: center;/*v*/
-		justify-content: cebter;
 		position: relative;
-
+	}
+	.header__content{/*v*/
+		width: 745px;
+    	margin-left: 12.5%;
+	}
+	.header__lang-switcher {
+		width: 20%;
+		height: 30%;
+		text-align: center;
+		cursor: default;
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+	.header__lang-switcher button{
+		background-image: ;
+		border-radius: 0px;
+		border: none;
+		width: 60px;
+		height: 100%;
+		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		text-transform: uppercase;
+  		color: white;
+  		font-size: 20px;
+  		text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  		margin: 0px 5px;
+	}
+	.en{
+		background-image: url("./icons/en.png");
+	}
+	.ru{
+		background-image: url("./icons/ru.png");
+	}
+	.header__lang-switcher button:hover{
+		filter: brightness(85%);
 	}
 	.header__burger{
 		display: none;/*v*/
-	}
-	.header__content{/*v*/
-		width: 70%;
-		margin-left: 0px;
 	}
 	.first{/*v*/
 		font-size: 40px;
@@ -578,6 +610,7 @@ body{
 	}
 	.title{/*v*/
 		justify-content: center;
+		padding: 0px;
 	}
 	.content__block{/*v*/
 		display: inline-block;
