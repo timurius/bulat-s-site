@@ -7,13 +7,6 @@ body{
 	font-family: sans-serif;
 	
 }
-.header__burger{
-	width: 50%;
-	justify-content: right;
-	padding-right: 20px;
-	font-size: 20px;
-	display: flex;
-}
 .header {
 	padding: 10px 0px;
 	display: flex;
@@ -28,7 +21,7 @@ body{
   	top: 0;
 }
 .header__content {
-	width: 50%;
+	width: 200px;
 	margin-left: 3%;
 }
 .header__burger a{
@@ -66,6 +59,46 @@ body{
 .header__buttons a {
 	color: black;
 	text-decoration-line: none;
+}
+.header__lang-switcher {
+	width: 40%;
+	height: 30%;
+	cursor: default;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.header__lang-switcher button{
+	background-image: ;
+	border-radius: 0px;
+	border: none;
+	width: 60px;
+	height: 100%;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	text-transform: uppercase;
+  	color: white;
+  	font-size: 20px;
+  	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  	margin: 0px 5px;
+}
+.en{
+	background-image: url("./icons/en.png");
+}
+.ru{
+	background-image: url("./icons/ru.png");
+}
+.header__lang-switcher button:hover{
+	filter: brightness(85%);
+}
+.header__burger{
+	width: 30%;
+	justify-content: right;
+	margin-right: 3%;
+	font-size: 20px;
+	display: flex;
 }
 .active{
 	display: block;
@@ -498,6 +531,9 @@ body{
 	display: none;
 }
 @media (min-width: 700px){
+	.header__content{
+		width: 30%;
+	}
 	.backstages__slider{
 		width: 575px;
 		height: 375px;
@@ -521,7 +557,7 @@ body{
 	}
 	.close-icon{
 		width: 600px;
-		margin-top: 20%;
+		margin-top: 30%;
 	}
 }
 @media (min-width: 800px){
@@ -562,39 +598,8 @@ body{
 		width: 745px;
     	margin-left: 12.5%;
 	}
-	.header__lang-switcher {
+	.header__lang-switcher{
 		width: 20%;
-		height: 30%;
-		text-align: center;
-		cursor: default;
-		position: relative;
-		display: flex;
-		justify-content: center;
-	}
-	.header__lang-switcher button{
-		background-image: ;
-		border-radius: 0px;
-		border: none;
-		width: 60px;
-		height: 100%;
-		background-position: center;
-  		background-repeat: no-repeat;
-  		background-size: cover;
-  		text-transform: uppercase;
-  		color: white;
-  		font-size: 20px;
-  		text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  		margin: 0px 5px;
-	}
-	.en{
-		background-image: url("./icons/en.png");
-	}
-	.ru{
-		background-image: url("./icons/ru.png");
-	}
-	.header__lang-switcher button:hover{
-		filter: brightness(85%);
 	}
 	.header__burger{
 		display: none;/*v*/
@@ -648,6 +653,9 @@ body{
 	}
 	.backstages__title{/*v*/
 		font-size: 36px;
+	}
+	.close-icon{
+		margin-top: 15%;
 	}
 	.about__content{/*v*/
 		width: 70%;
