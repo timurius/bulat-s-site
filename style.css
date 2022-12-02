@@ -21,8 +21,10 @@ body{
   	top: 0;
 }
 .header__content {
-	width: 200px;
+	width: 80%;
 	margin-left: 3%;
+	display: flex;
+	align-items: center;
 }
 .header__burger a{
 	color: black;
@@ -30,15 +32,15 @@ body{
 
 .header__logo {
 	vertical-align: middle;
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 70px;
 	display: inline-block;
 	margin-right: 10%;
 }
 .header__logo img{
 	border-radius: 90%;
 	width: 100%;
-	height: 100%
+	height: 100%;
 }
 .header__buttons {
 	position: absolute;
@@ -61,47 +63,46 @@ body{
 	text-decoration-line: none;
 }
 .header__lang-switcher {
-	width: 40%;
-	height: 30%;
+	width: 10%;
+	height: 20%;
 	cursor: default;
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: right;
+	align-items: center;
+	text-decoration: none;
 }
-.header__lang-switcher button{
-	background-image: ;
-	border-radius: 0px;
-	border: none;
-	width: 60px;
-	height: 100%;
-	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
+.header__lang-switcher img{
+	width: 40px;
+	height: 25px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.header__lang-switcher p{
   	text-transform: uppercase;
-  	color: white;
-  	font-size: 20px;
-  	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  	margin: 0px 5px;
+  	font-size: 15px;
+   	margin: 0px 5px;
+   	color: #888;
+   	font-weight: 600;
 }
-.en{
-	background-image: url("./icons/en.png");
+.header__lang-switcher:hover{
+	cursor: pointer;
 }
-.ru{
-	background-image: url("./icons/ru.png");
-}
-.header__lang-switcher button:hover{
-	filter: brightness(85%);
-}
+
 .header__burger{
-	width: 30%;
+	width: 10%;
 	justify-content: right;
 	margin-right: 3%;
 	font-size: 20px;
 	display: flex;
 }
+.header__burger a{
+	display: flex;
+	align-items: center;
+}
 .active{
 	display: block;
+	position: absolute;
+	top: 120px;
 }
 .title {
 	margin: 15px 0px;
@@ -522,7 +523,6 @@ body{
 }
 .contacts a:visited {
 	color: #888;
-
 }
 .contacts a:hover{
 	text-decoration-line: underline;
@@ -530,9 +530,10 @@ body{
 .third-block {
 	display: none;
 }
-@media (min-width: 700px){
-	.header__content{
-		width: 30%;
+@media (min-width: 70px){
+	.header__logo {
+		width: 100px;
+		height: 100px;
 	}
 	.backstages__slider{
 		width: 575px;
@@ -559,8 +560,9 @@ body{
 		width: 600px;
 		margin-top: 30%;
 	}
+
 }
-@media (min-width: 800px){
+@media (min-width: 860px){
 	.backstages__slider{
 		width: 700px;
 		height: 450px;
@@ -569,6 +571,11 @@ body{
 		font-size: 18px;
 	}
 	.backstages{
+	}
+	.content__block{/*v*/
+		display: inline-block;
+		width: 400px;
+		margin: 5px 10px;
 	}
 
 }
@@ -599,7 +606,7 @@ body{
     	margin-left: 12.5%;
 	}
 	.header__lang-switcher{
-		width: 20%;
+		width: 10%;
 	}
 	.header__burger{
 		display: none;/*v*/
@@ -617,11 +624,7 @@ body{
 		justify-content: center;
 		padding: 0px;
 	}
-	.content__block{/*v*/
-		display: inline-block;
-		width: 400px;
-		margin: 5px 10px;
-	}
+	
 	.text{/*v*/
 		font-size: 16px;
 	}
@@ -694,11 +697,14 @@ body{
 	.contacts__container {}
 	.contacts a{
 		text-align: left;
-		display: block;
+		display: flex;
 		width: 100%;
 		margin: 10px 0px;
 		font-size: 25px;
-		
+		align-items: center;
+	}
+	.contacts a img{
+		margin-right: 5px;
 	}
 	.contacts h2{
 		text-align: left;
@@ -711,5 +717,33 @@ body{
 	.third-block{
 		display: inline-block;
 		width: 33%;
+	}
+	.footer{
+		width: auto;
+		justify-content: left;
+		height: auto;
+		margin: 8px 10px;
+	}
+	.footer__buttons {
+		padding: 0px;
+		margin: 42px 8px;
+		margin-bottom: 0px;
+	}
+	.footer__buttons li{
+		width: 100%;
+		display: block;
+		font-size: 25px;
+		margin: 10px 0px;
+		font-size: 25px;
+		height: 29px;
+	}
+	.footer__buttons a{
+		color: #888;
+		text-decoration: none;
+	}
+	.copyrighted {
+		color: #888;
+		margin: 0px 8px;
+		margin-top: 32px;
 	}
 }
